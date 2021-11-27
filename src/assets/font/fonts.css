@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Kochasan Regular';
+    src: url("../font/Kodchasan-Regular.ttf");
+}
+@font-face {
+    font-family: 'Kochasan Semibold';
+    src: url("../font/Kodchasan-SemiBold.ttf");
+}
+@font-face {
+    font-family: 'Kochasan Medium';
+    src: url("../font/Kodchasan-Medium.ttf");
+}
+@font-face {
+    font-family: 'Kochasan Bold';
+    src: url("../font/Kodchasan-Bold.ttf");
+}
