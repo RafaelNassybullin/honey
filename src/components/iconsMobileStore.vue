@@ -1,7 +1,6 @@
 <template>
-
   <div class="google-play">
-    <svg height="2.917vw" viewBox="0 0 140 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg  viewBox="0 0 140 42" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
           d="M134.017 41.2715H5.25168C2.41888 41.2715 0.101074 38.9499 0.101074 36.1125V5.15895C0.101074 2.32152 2.41883 0 5.25168 0H134.017C136.85 0 139.167 2.32152 139.167 5.15895V36.1125C139.167 38.9499 136.85 41.2715 134.017 41.2715"
           fill="black"/>
@@ -144,7 +143,7 @@
     </svg>
   </div>
   <div class="app-store">
-    <svg height="2.917vw" viewBox="0 0 143 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg  viewBox="0 0 143 42" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="0.534614" y="0.367378" width="141.492" height="41.2651" rx="3.3064" fill="black" stroke="#A6A6A6"
             stroke-width="0.734756"/>
       <path
@@ -217,18 +216,21 @@
           fill="white"/>
     </svg>
   </div>
-
 </template>
-
 <script>
 export default {
   name: "icon",
-
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 div {
   cursor: pointer;
+  svg{
+    height: 2.917vw;
+    @media(max-width: 433px){
+     height: 13vw;
+    }
+  }
 }
 </style>

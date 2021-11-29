@@ -40,7 +40,9 @@ export default {
 <style lang="scss" scoped>
 .wrapper-hero {
   position: relative;
+@media(max-width: 433px){
 
+}
   .honey-liquid {
     width: 14.236vw;
     height: 22.292vw;
@@ -48,11 +50,17 @@ export default {
     top: 1vw;
     left: -6vw;
     z-index: 3;
-
+@media(max-width: 433px){
+width: 23.236vw;
+height: 46.292vw;
+}
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+      @media(max-width: 433px){
+
+}
     }
   }
 }
@@ -67,14 +75,23 @@ export default {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
+@media(max-width: 433px){
+height: 200.069vw;justify-content: center;border-radius: 5.083vw;
+}
   .water-mark {
     position: absolute;
     left: 3vw;
     top: 9vw;
-
+@media(max-width: 433px){
+left: 0vw;
+top: 0vw;
+transform: rotateX(90deg);
+}
     svg {
       width: 88.667vw;
+      @media(max-width: 433px){
+
+}
     }
 
   }
@@ -84,11 +101,18 @@ export default {
     width: 47.708vw;
     height: 45.139vw;
     z-index: 2;
-
+@media(max-width: 433px){
+width: 87.708vw;
+height: 84.139vw;
+transform: translateY(54vw);
+}
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+      @media(max-width: 433px){
+
+}
     }
   }
 
@@ -97,22 +121,37 @@ export default {
     font-size: 6.944vw;
     position: absolute;
     z-index: 2;
+    @media(max-width: 433px){
+font-size: 15.944vw;
+}
   }
 
 
   .finger {
     top: 12vw;
     left: 11vw;
+    @media(max-width: 433px){
+top: 19vw;
+left: 18vw;
+}
   }
 
   .licking {
     top: 21vw;
     left: 19vw;
+    @media(max-width: 433px){
+top: 37vw;
+left: 30vw;
+}
   }
 
   .honey-word {
     top: 30vw;
     left: 27vw;
+    @media(max-width: 433px){
+top: 54vw;
+left: 37vw;
+}
   }
 
   .bee {
@@ -122,11 +161,16 @@ export default {
     left: 8vw;
     z-index: 3;
     height: 8.958vw;
-
+@media(max-width: 433px){
+width: 31.056vw;top: 70vw;height: 21.958vw;
+}
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+      @media(max-width: 433px){
+
+}
     }
   }
 
@@ -137,6 +181,9 @@ export default {
     top: 37vw;
     left: 7vw;
     background: black;
+    @media(max-width: 433px){
+display: none;
+}
   }
 
   .buttons {
@@ -149,7 +196,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+@media(max-width: 433px){
+top: 90vw;width: 74.097vw;
+height: 12.514vw;
+}
     button {
       width: 12.500vw;
       cursor: pointer;
@@ -159,10 +209,15 @@ export default {
       border: 0.139vw solid black;
       outline: none;
       font-size: 1.250vw;
-
+@media(max-width: 433px){
+width: 34.5vw;font-size: 4.25vw;
+}
       &:last-child {
         background: transparent;
         color: black;
+        @media(max-width: 433px){
+
+}
       }
     }
   }

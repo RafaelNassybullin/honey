@@ -67,6 +67,10 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 9.028vw;
+  @media(max-width: 433px){
+height: 112.514vw;padding: 9vw 0;
+     margin-top: 16.028vw;
+  }
 }
 
 .footer-wrap {
@@ -74,12 +78,25 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media(max-width: 433px){
+flex-direction: column;
+height: 100%;width: 90.444vw;
+  }
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  svg{
+    @media(max-width: 433px){
+      height: 13.014vw;
+    }
+  }
+  @media(max-width: 433px){
+justify-content: flex-start;
+width: 100%;
+  }
 }
 
 .social {
@@ -87,12 +104,28 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 13.611vw;
+  @media(max-width: 433px){
+width: 74.611vw;
+  }
+
+  .social-icon{
+    svg{
+      @media(max-width: 433px){
+        height: 8.389vw;
+      }
+    }
+  }
+
 }
 
 p {
   width: 18.681vw;
   font-size: 0.972vw;
   font-weight: 600;
+  @media(max-width: 433px){
+width: 100%;
+font-size: 4.972vw;
+  }
 }
 
 .app {
@@ -100,5 +133,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+    svg{
+      @media(max-width: 433px){
+        height: 11.917vw;
+      }
+    }
+
+  @media(max-width: 433px){
+width: 100%;
+  }
 }
 </style>

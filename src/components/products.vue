@@ -8,8 +8,8 @@
 
       <div class="product" v-for="item in productsData">
         <div class="text">
-          <h1>{{item.name}}</h1>
-          <p>{{item.paragraph}}</p>
+          <h1>{{ item.name }}</h1>
+          <p>{{ item.paragraph }}</p>
           <button>Buy Now</button>
         </div>
         <div class="image">
@@ -24,18 +24,18 @@
 <script>
 export default {
   name: "products",
-  data(){
-    return{
-      productsData:[
+  data() {
+    return {
+      productsData: [
         {
-          name:'Eucalyptus Honey',
-          paragraph:'It has the scent of lavender, medium sweetness lavender scented, and has a medium amber color.',
-          image:'honeymug.png'
+          name: 'Eucalyptus Honey',
+          paragraph: 'It has the scent of lavender, medium sweetness lavender scented, and has a medium amber color.',
+          image: 'honeymug.png'
         },
-          {
-          name:'Basswood Honey',
-          paragraph:'Basswood is a tree native and abundant in Wisconsin, which is also known as the Linden tree.',
-          image:'honeyinglass.png'
+        {
+          name: 'Basswood Honey',
+          paragraph: 'Basswood is a tree native and abundant in Wisconsin, which is also known as the Linden tree.',
+          image: 'honeyinglass.png'
         },
       ]
     }
@@ -50,9 +50,15 @@ export default {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3.472vw;
+  @media(max-width: 433px) {
+
+  }
 
   h1 {
     font-size: 3.125vw;
+    @media(max-width: 433px) {
+      font-size: 10.125vw;
+    }
   }
 
   a {
@@ -60,6 +66,9 @@ export default {
     font-weight: 600;
     transform: translateY(0.8vw);
     font-size: 1.250vw;
+    @media(max-width: 433px) {
+      font-size: 4.25vw;
+    }
   }
 }
 
@@ -69,12 +78,19 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  @media(max-width: 433px) {
+    width: 93.583vw;
+    margin-top: 36vw;
+  }
 }
 
 .products-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media(max-width: 433px) {
+    flex-direction: column;
+  }
 }
 
 .product {
@@ -86,10 +102,25 @@ export default {
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
+  @media(max-width: 433px) {
+    width: 91.75vw;
+    height: 42.181vw;
+    margin-top: 9vw;
+    margin-bottom: 7vw;
+  }
+
   .text {
     width: 20.972vw;
+    @media(max-width: 433px) {
+      width: 64.972vw;
+
+    }
+
     h1 {
       font-size: 1.944vw;
+      @media(max-width: 433px) {
+        font-size: 6.944vw;
+      }
     }
 
     p {
@@ -97,6 +128,10 @@ export default {
       font-size: 1.111vw;
       font-family: 'Kochasan Semibold', sans-serif;
       line-height: 2.000vw;
+      @media(max-width: 433px) {
+        font-size: 3.111vw;
+        line-height: 4vw;
+      }
     }
 
     button {
@@ -107,6 +142,11 @@ export default {
       width: 9.722vw;
       height: 3.403vw;
       font-size: 1.250vw;
+      @media(max-width: 433px) {
+        width: 23.722vw;
+        height: 10.403vw;
+        font-size: 4.25vw;
+      }
     }
   }
 
@@ -117,10 +157,18 @@ export default {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    @media(max-width: 433px) {
+      width: 33.25vw;
+      height: 35.222vw;
+    }
+
     img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+      @media(max-width: 433px) {
+
+      }
     }
   }
 }
